@@ -20,7 +20,7 @@ def para_gen(request):
         output = generator.decode(text)
         print(text, output)
         return Response(
-            {"res": output, status=status.HTTP_200_OK}
+            {"res": output}status=status.HTTP_200_OK
         )
 
 

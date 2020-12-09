@@ -3,14 +3,14 @@ from __future__ import division
 from __future__ import print_function
 
 from transformers import BertTokenizer, RobertaTokenizer
-from s2s_ft.modeling_decoding import BertForSeq2SeqDecoder, BertConfig
+from ...unilm.s2s_ft.modeling_decoding import BertForSeq2SeqDecoder, BertConfig
 from transformers.tokenization_bert import whitespace_tokenize
-import s2s_ft.s2s_loader as seq2seq_loader
-from s2s_ft.utils import load_and_cache_examples
+import ...unilm.s2s_ft.s2s_loader as seq2seq_loader
+from ...unilm.s2s_ft.utils import load_and_cache_examples
 from transformers import \
     BertTokenizer, RobertaTokenizer
-from s2s_ft.tokenization_unilm import UnilmTokenizer
-from s2s_ft.tokenization_minilm import MinilmTokenizer
+from ...unilm.s2s_ft.tokenization_unilm import UnilmTokenizer
+from ...unilm.s2s_ft.tokenization_minilm import MinilmTokenizer
 
 import json
 
