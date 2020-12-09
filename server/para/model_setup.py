@@ -33,7 +33,7 @@ class unilm_paraphrase_generator:
             generator_config = json.load(f)
 
         self.tokenizer = BertTokenizer.from_pretrained(generator_config["tokenizer_name"])
-        self.config = BertConfig.from_pretrained(generator_config["config_name"])
+        self.config = BertConfig.from_pretrained(generator_config["config_path"])
         self.max_seq_length = generator_config['max_seq_length']
         self.max_tgt_length = generator_config['max_tgt_length']
         self.beam_size = generator_config['beam_size']
