@@ -8,7 +8,7 @@ import os
 from model_setup import unilm_paraphrase_generator
 # Create your views here.
 
-config_path = ""
+config_path = "config.json"
 
 generator = unilm_paraphrase_generator(config_path)
 

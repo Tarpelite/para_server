@@ -37,7 +37,7 @@ class unilm_paraphrase_generator:
         self.max_seq_length = generator_config['max_seq_length']
         self.max_tgt_length = generator_config['max_tgt_length']
         self.beam_size = generator_config['beam_size']
-        self.pos_shift = generator_config['pos_shift']
+        self.pos_shift = False
         self.batch_size = 1
         self.bi_uni_pipeline = []
 

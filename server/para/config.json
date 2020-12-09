@@ -1,0 +1,9 @@
+{
+    "model_type":"bert",
+    "model_path":"",
+    "config_path": "",
+    "tokenizer_name": "",
+    "max_seq_length":128,
+    "beam_size":5,
+    "max_tgt_length":64
+}
